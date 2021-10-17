@@ -1,5 +1,10 @@
  @media only screen and(max-width: 992px)
  {
+    .loginbox{
+     width: 80% !important;
+  }
+
+
   .login_form{
       width: 70% !important; 
   }
@@ -43,6 +48,9 @@
 
  @media only screen and (max-width: 768px)
  {
+  .loginbox{
+     width: 80% !important;
+  }
   .user-icon{
      left: 30%;
   }
@@ -82,6 +90,19 @@
  }
  
 
+
+ 
+
+    .searchtable{
+        width: 70% !important; 
+input{
+     width: 100% !important;
+}
+}
+
+
+
+
 }
 
 
@@ -89,3 +110,17 @@
 
 
  } // media queriy class
+
+
+ @media screen and (max-width: 576px)
+ {
+
+
+    .searchtable{
+        width: 70% !important; 
+input{
+     width: 80% !important;
+}
+}
+
+ }

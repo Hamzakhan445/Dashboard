@@ -60,6 +60,9 @@ body {
 /*The sidebar css styling section ends here **
    ***********************************/
 @media only screen and (max-width: 992px) {
+  .loginbox {
+    width: 80% !important; }
+
   .login_form {
     width: 70% !important; }
 
@@ -91,6 +94,9 @@ body {
     .chart-wrapper .chartbox {
       width: 100% !important; } }
 @media only screen and (max-width: 768px) {
+  .loginbox {
+    width: 80% !important; }
+
   .user-icon {
     left: 30%; }
 
@@ -117,7 +123,16 @@ body {
   .status-wrapper {
     flex-direction: column; }
     .status-wrapper .staticbox {
-      width: 96% !important; } }
+      width: 96% !important; }
+    .status-wrapper .searchtable {
+      width: 70% !important; }
+      .status-wrapper .searchtable input {
+        width: 100% !important; } }
+@media screen and (max-width: 576px) {
+  .searchtable {
+    width: 70% !important; }
+    .searchtable input {
+      width: 80% !important; } }
 .top-navbar {
   width: 100%;
   background: white;
@@ -186,6 +201,79 @@ body {
       top: -35%;
       margin: 0 auto;
       right: 35%; }
+
+.tablebtn {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  background: #fd6c81;
+  border: none;
+  box-shadow: 3px 5px 12px grey;
+  color: white;
+  cursor: pointer;
+  margin: 0 5px; }
+  .tablebtn:hover {
+    transition: all 0.4s ease;
+    transform: scale(1.1, 1.1);
+    background: white;
+    color: black; }
+
+.tablesearch {
+  border: none;
+  padding: 10px;
+  background: white;
+  box-shadow: 3px 5px 12px grey;
+  width: 30%; }
+
+.table-container {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 40px;
+  box-shadow: 5px 5px 12px lightgrey; }
+  .table-container table {
+    margin-top: 40px; }
+
+.searchbtn {
+  width: 60px;
+  border: none;
+  height: 50px;
+  box-shadow: 3px 5px 12px grey;
+  background: #fd6c81;
+  color: white; }
+
+input:focus {
+  outline: none;
+  border: none; }
+
+.tabletop {
+  display: flex;
+  justify-content: space-between; }
+  .tabletop .searchtable {
+    width: 100%; }
+  .tabletop .dropdown {
+    width: 20%; }
+
+.colbtn {
+  background: white;
+  padding: 20px;
+  width: 100%;
+  border: none;
+  box-shadow: 3px 5px 12px lightgrey; }
+  .colbtn:focus {
+    border: none;
+    outline: none; }
+
+.faqbox {
+  box-shadow: 3px 5px 12px lightgrey;
+  background: white;
+  padding: 15px;
+  border-radius: 10px; }
+
+#faqdata, #faqdata2, #fadata3 {
+  padding: 20px;
+  box-shadow: 3px 5px 12px lightgrey;
+  background: white; }
 
 /*Css links and more toop section***
 ************************************/
@@ -692,5 +780,76 @@ body {
 .toggle_show {
   visibility: visible;
   transition: 0.4s ease; }
+
+.loginbox {
+  width: 50%;
+  margin: 0 auto;
+  background: lightgrey;
+  padding: 20px;
+  box-shadow: 3px 5px 12px grey;
+  position: relative; }
+
+.loginbox::after {
+  content: "";
+  position: absolute;
+  width: 240px;
+  height: 240px;
+  border-radius: 100%;
+  background: #fd6c81;
+  box-shadow: 3px 5px 12px grey;
+  left: -20%;
+  top: 50%;
+  z-index: -99999 !important; }
+
+.bgimg {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.loginimg {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+  margin-top: -120px; }
+
+.user-profile {
+  width: 100% !important; }
+
+.profileinfo {
+  width: 100%; }
+
+.profile-text a {
+  text-decoration: none;
+  font-size: 20px !important; }
+.profile-text li {
+  list-style: none;
+  line-height: 50px;
+  padding: 10px; }
+
+li:hover {
+  background: #fd6c81;
+  transition: 0.4s;
+  color: white !important; }
+
+li:hover a {
+  color: white !important; }
+
+.active {
+  background: #fd6c81;
+  color: white; }
+
+.iconbox {
+  font-size: xx-large;
+  background: lightgrey;
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.box-1, .box-3, .box-6, .box-7 {
+  box-shadow: 3px 5px 12px lightgrey; }
 
 /*# sourceMappingURL=style.css.map */

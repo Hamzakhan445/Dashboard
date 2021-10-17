@@ -13,6 +13,8 @@ body{
 @import '_navbar';
 @import '_scrollbar';
 @import '_login';
+@import '_table';
+@import '_faq';
 
 
  
@@ -684,3 +686,104 @@ i{
 	 transition: 0.4s ease;
  }
 
+
+
+
+.loginbox{
+	 width: 50%;
+	 margin: 0 auto;
+	 background: lightgrey;
+	 padding: 20px;
+	 box-shadow: 3px 5px 12px grey;
+ 	 position: relative;
+
+input{
+ }
+}
+.loginbox::after{
+	content : "";
+	position: absolute;
+	width: 240px;
+	height: 240px;
+	border-radius: 100%;
+	background: $color2;
+	box-shadow: 3px 5px 12px grey;
+	left: -20%;
+	top: 50%;
+	z-index: -99999 !important;
+}
+
+
+.bgimg{
+  	 height: 100vh;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+}
+
+
+ .loginimg{
+ 	 width: 120px;
+ 	 height: 120px;
+ 	 object-fit: contain;
+ 	 margin-top: -120px;
+  }
+
+
+
+
+
+  .user-profile{
+  	 width: 100% !important;
+   }
+
+   .profileinfo{
+   	 width: 100%;
+    }
+ 
+ 
+
+
+ .profile-text{
+ a{
+ 	text-decoration: none;
+ 	font-size: 20px !important;
+ }
+ li{
+ 	 list-style: none;
+ 	 line-height: 50px;
+ 	 padding: 10px;
+ }
+ }
+
+li:hover{
+	 background: $color2;
+	 transition: 0.4s;
+	 color: white !important;  
+}
+li:hover a{
+	 color: white !important;
+}
+
+ .active{
+ 	background: $color2;
+ 	color: white;
+
+ }
+
+
+ .iconbox{
+ 	 font-size: xx-large;
+ 	 background: lightgrey;
+ 	 width: 90px;
+ 	 height: 90px;
+ 	 border-radius: 100%;
+ 	 display: flex;
+ 	 justify-content: center;
+ 	 align-items: center;
+ }
+
+
+ .box-1, .box-3, .box-6, .box-7{
+ 	 box-shadow: 3px 5px 12px lightgrey;
+ }

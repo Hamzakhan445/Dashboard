@@ -108,10 +108,7 @@ var chart3 = new CanvasJS.Chart("chartContainer3", {
 	}]
 });
 
-
-
-
-
+ 
 
 
 
@@ -130,8 +127,7 @@ chart.render();
 chart2.render();
 chart3.render();
 chart4.render();
-
-}
+ }
  
 
 
